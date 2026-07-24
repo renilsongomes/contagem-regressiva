@@ -1,0 +1,26 @@
+@use '../variables';
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+        text-align: center;
+        white-space:nowrap;
+    border-radius: 10px;
+    &--primary{
+        color:variables.$textColor;
+        background-color:variables.$purple;
+    }
+    @media(max-width:640px){
+        dispaly:flex;//obriga os itens a ficarem em linhas separadas
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+    }
+    @media(max-width:1024px){
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,13 @@
+node_modules
+dist
+# Cache do Vite
+.vite/
+
+# Build do Vite
+dist/
+dist-ssr/
+
+# Arquivos de ambiente do Vite
+.env
+.env.local
+.env.*.local

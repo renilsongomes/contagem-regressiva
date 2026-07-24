@@ -1,0 +1,53 @@
+@use 'variables';
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;//completa todo o tamanho do container
+    position: relative;//tem o poder de prender o item que possui o position absolute
+    background-image: linear-gradient(variables.$blue1, variables.$yellow);
+    .container{
+        position: relative;
+    }
+
+
+    &__text{
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        display: center;
+        font-family:  "Edu VIC WA NT Hand", cursive;
+        &--mensage{
+            padding-bottom: 20px;
+            font-family:  "Edu VIC WA NT Hand", cursive;
+        }
+        &--contador{
+        font-family: "Bebas Neue", sans-serif;
+        }
+        span{
+            align-items: flex-end;
+        }
+    }
+    &__logo{
+        margin: 0 auto;
+        height: 80px;
+        display: block;
+    }
+    @media(max-width:640px){
+        padding: 40px 0;
+        &__logo{
+            height: 40px;
+        }
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+
+        }
+    }
+
+}
